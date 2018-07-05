@@ -25,7 +25,7 @@ WEIGHT_DECAY = 0.00001
 flag_train = True
 conf_matrix = False
 standard_error = False
-data, label, mask, sequence_length, protvec, weight_mask, b_label_all = prepare_data("../input", "../output")
+data, label, mask, sequence_length, protvec, weight_mask, b_label_all = prepare_data("../../input", "../../output")
 vocabulary_size = len(protvec)
 
 def plot_confusion_matrix(cm, classes,

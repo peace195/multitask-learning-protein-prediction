@@ -22,7 +22,7 @@ TRAINING_ITERATIONS = 2000
 LEARNING_RATE = 0.01
 WEIGHT_DECAY = 0.00001
 flag_train = False
-data, label, mask, sequence_length, protvec, key_aa, rel_label_all = prepare_data("../input", "../output")
+data, label, mask, sequence_length, protvec, key_aa, rel_label_all = prepare_data("../../input", "../../output")
 vocabulary_size = len(protvec)
 
 def plot_confusion_matrix(cm, classes,

@@ -22,7 +22,7 @@ TRAINING_ITERATIONS = 2000
 LEARNING_RATE = 0.01
 WEIGHT_DECAY = 0.00001
 flag_train = True
-data, label, mask, sequence_length, protvec, weight_mask, b_label_all = prepare_data("../input", "../output")
+data, label, mask, sequence_length, protvec, weight_mask, b_label_all = prepare_data("../../input", "../../output")
 
 data = np.asarray(data[20 * len(data) / 100 :])
 b_label_all = np.asarray(b_label_all[20 * len(b_label_all) / 100 :])
