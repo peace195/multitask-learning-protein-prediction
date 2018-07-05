@@ -40,7 +40,6 @@ def prepare_data(input_dir, ouput_dir):
 	protvec = np.asarray(protvec, dtype=np.float32)
 	data = []
 	label = []
-	rel_label = []
 	b_label = []
 	sequence_length = []
 	weight_mask = []
@@ -72,7 +71,6 @@ def prepare_data(input_dir, ouput_dir):
 
 		file_id = text_file.split('.')[0].lower()
 		fo = open(os.path.join(ouput_dir, file_id + ".8.consensus.dssp"), "r")
-		foo = np.memmap(os.path.join(ouput_dir, file_id + ".rel_asa.memmap"), dtype=np.float32, mode='r', shape=input_length)
 		try:
 			fooo = np.memmap(os.path.join(ouput_dir, file_id + ".bdb.memmap"), dtype=np.float32, mode='r', shape=input_length)
 		except IOError:
@@ -88,15 +86,6 @@ def prepare_data(input_dir, ouput_dir):
 				output_length = output_length + len(line.rstrip())
 		label_tmp = [states[x] for x in output_state]
 
-		foo_tmp = []
-		rel_label_tmp = []
-		for rel in foo:
-			if rel <= 0.09:
-				foo_tmp.append(0)
-			elif rel >= 0.36:
-				foo_tmp.append(2)
-			else:
-				foo_tmp.append(1)
 		
 		fooo_tmp = []
 		b_label_tmp = []
@@ -115,7 +104,6 @@ def prepare_data(input_dir, ouput_dir):
 				continue
 			else:
 				input_vector_tmp.append(input_vector[i])
-				rel_label_tmp.append(foo_tmp[i])
 				b_label_tmp.append(fooo_tmp[i])
 
 		label_tmp = [x for x in label_tmp if x != 3]
@@ -123,7 +111,6 @@ def prepare_data(input_dir, ouput_dir):
 		for i in range(input_length, seq_max_len):
 			input_vector_tmp.append(key_aa["zero"])
 			label_tmp.append(1)
-			rel_label_tmp.append(1)
 			b_label_tmp.append(random.choice([0, 2]))
 			#b_label_tmp.append(0)
 
@@ -143,7 +130,6 @@ def prepare_data(input_dir, ouput_dir):
 		label.append(label_tmp)
 		data.append(input_vector_tmp)
 		sequence_length.append(input_length)
-		rel_label.append(rel_label_tmp)
 		b_label.append(b_label_tmp)
 
 		fi.close()
@@ -152,4 +138,4 @@ def prepare_data(input_dir, ouput_dir):
 	for length in sequence_length:
 	  mask.append([1] * length + [0] * (930 - length))
 
-	return data, label, mask, sequence_length, protvec, weight_mask, rel_label, b_label
+	return data, label, mask, sequence_length, protvec, weight_mask, b_label
