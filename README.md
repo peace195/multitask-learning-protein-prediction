@@ -1,5 +1,10 @@
 ## Descriptions
-	
+
+Protein multitask learning (secondary structure prediction, b-values prediction, solvent-accessibility prediction) can improve the prediction accuracy of protein secondary structure.
+
+## Data
+
+
 ## Prerequisites
 
 * python 2.7
