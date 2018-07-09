@@ -2,7 +2,9 @@
 
 Protein multitask learning (secondary structure prediction, b-values prediction, solvent-accessibility prediction) can improve the prediction accuracy of protein secondary structure.
 
+- We have to face the class imbalance problem
 - "foldername_cv": 5 fold cross validation
+
 ## Data
 
 ## Results
@@ -24,6 +26,7 @@ Protein multitask learning (secondary structure prediction, b-values prediction,
 
 * python 2.7
 * tensorflow 1.4.0
+* ProtVec
 
 ## How to run
 
