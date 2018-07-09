@@ -7,7 +7,7 @@ Protein multitask learning (secondary structure prediction, b-values prediction,
 
 ## Data
 
-The copyright belongs to http://rostlab.org/. It is not public.
+The copyright belongs to http://rostlab.org/. It can not be public.
 
 ## Multitask learning model
 
