@@ -7,6 +7,10 @@ Protein multitask learning (secondary structure prediction, b-values prediction,
 
 ## Data
 
+## Multitask learning model
+
+[alt text](https://raw.githubusercontent.com/peace195/protein-prediction/master/multitask.jpg)
+
 ## Results
 
 * Secondary structure
