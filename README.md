@@ -34,6 +34,10 @@ Protein multitask learning (secondary structure prediction, b-values prediction,
 
 ## How to run
 
+Go into each subfolder and run the code following:
+
+* python lstm.py
+
 ## Author
 
 **Binh Do**
