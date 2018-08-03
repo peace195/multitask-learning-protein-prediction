@@ -4,6 +4,9 @@ Protein multitask learning (secondary structure prediction, b-values prediction,
 
 - We have to face with the class imbalance problem
 - "foldername_cv": 5 fold cross validation
+- Distribution of outputs:
+
+![alt text](https://raw.githubusercontent.com/peace195/protein-prediction/master/distribution_of_outputs.jpg)
 
 ## Data
 
