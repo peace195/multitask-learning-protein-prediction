@@ -41,15 +41,15 @@ The copyright belongs to http://rostlab.org/. It can not be public.
 
 * Secondary structure
 
-![alt text](https://raw.githubusercontent.com/peace195/protein-prediction/master/multitask-learning/multitask-8states/cm1.png | width=200)
+![alt text](https://raw.githubusercontent.com/peace195/protein-prediction/master/multitask-learning/multitask-8states/cm1.png =250x250)
 
 * Solvent accessibility
 
-![alt text](https://raw.githubusercontent.com/peace195/protein-prediction/master/multitask-learning/multitask-8states/cm2.png | width=200)
+![alt text](https://raw.githubusercontent.com/peace195/protein-prediction/master/multitask-learning/multitask-8states/cm2.png =250x250)
 
 * b-values
 
-![alt text](https://raw.githubusercontent.com/peace195/protein-prediction/master/multitask-learning/multitask-8states/cm3.png | width=200)
+![alt text](https://raw.githubusercontent.com/peace195/protein-prediction/master/multitask-learning/multitask-8states/cm3.png =250x250)
 
 
 ## Prerequisites
