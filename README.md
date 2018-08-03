@@ -15,9 +15,9 @@ The copyright belongs to http://rostlab.org/. It can not be public.
 
 ## Results
 
-###3 states protein secondary structure)
+### 3 states protein secondary structure)
 
-###Multi-task learning (3 tasks, 3 states):
+### Multi-task learning (3 tasks, 3 states):
 
 - Secondary Structure accuracy (3 states): 69.0%
 
@@ -26,9 +26,9 @@ The copyright belongs to http://rostlab.org/. It can not be public.
 - B-values accuracy (3 states): 59.1%
 
 
-####8 states protein secondary structure
+#### 8 states protein secondary structure
 
-####Multi-task learning (3 tasks, 8 states):
+#### Multi-task learning (3 tasks, 8 states):
 
 - Secondary Structure accuracy (8 states): 0.476
 
