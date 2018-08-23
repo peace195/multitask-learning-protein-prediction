@@ -14,7 +14,7 @@ The copyright belongs to http://rostlab.org/. It can not be public.
 
 ## Data representation
 
-Using Protvec (3-gram) and follow the rule:
+Using Protvec (3-gram) and follow the vector addition rule. For example:
 
 TNCDE = UTN + TNC + NCD + CDE + DEU
 
