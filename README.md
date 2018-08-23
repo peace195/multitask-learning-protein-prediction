@@ -1,6 +1,6 @@
 ## Descriptions
 
-Protein multitask learning (secondary structure prediction, b-values prediction, solvent-accessibility prediction) can improve the prediction accuracy of protein secondary structure.
+Multitask learning (secondary structure prediction, b-values prediction, solvent-accessibility prediction) can improve the prediction accuracy of protein secondary structure.
 
 - We have to face with the class imbalance problem
 - "foldername_cv": 5 fold cross validation
@@ -11,6 +11,12 @@ Protein multitask learning (secondary structure prediction, b-values prediction,
 ## Data
 
 The copyright belongs to http://rostlab.org/. It can not be public.
+
+## Data representation
+
+Using Protvec (3-gram) and follow the vector addition rule. For example:
+
+TNCDE = UTN + TNC + NCD + CDE + DEU
 
 ## Multitask learning model
 
